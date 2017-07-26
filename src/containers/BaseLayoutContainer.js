@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 const styles = {
+  headerContainer: {
+    padding: 20,
+    backgroundColor: "pink"
+  },
   ButtonStyle: {
     marginRight: 10,
     height: 35
@@ -9,8 +13,8 @@ const styles = {
   HeaderLinkStyle: {
     padding: 10,
     color: "blue",
-    textDecoration: "none",
-    fontSize: 20
+    fontSize: 20,
+    textDecoration: "none"
   },
   FooterLinkStyle: {
     padding: 10,
@@ -24,7 +28,7 @@ const styles = {
 class BaseLayoutContainer extends Component {
   render() {
     return (
-      <div>
+      <div style={styles.headerContainer}>
         <header>
           <button style={styles.ButtonStyle}>
             <Link style={styles.HeaderLinkStyle} to="/">
