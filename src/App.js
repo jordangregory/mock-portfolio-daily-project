@@ -6,6 +6,8 @@ import AboutContainer from "./containers/AboutContainer";
 import BaseLayoutContainer from "./containers/BaseLayoutContainer";
 import HomeContainer from "./containers/HomeContainer";
 import PortfolioContainer from "./containers/PortfolioContainer";
+import ContactsContainer from "./containers/ContactsContainer";
+import ReferencesContainer from "./containers/ReferencesContainer";
 
 class App extends Component {
   render() {
@@ -15,7 +17,9 @@ class App extends Component {
           <Switch>
             <Route path="/about" component={AboutContainer} />
             <Route path="/portfolio" component={PortfolioContainer} />
-            <Route path="/" component={HomeContainer} />
+            <Route path="/contacts" component={ContactsContainer} />
+            <Route path="/references" component={ReferencesContainer} />
+            <Route exact path="/" component={HomeContainer} />
           </Switch>
         </BaseLayoutContainer>
       </BrowserRouter>

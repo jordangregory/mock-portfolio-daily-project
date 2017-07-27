@@ -1,12 +1,12 @@
 import React, { Component } from "react";
+
 const styles = {
   homePage: {
     padding: 50,
     backgroundColor: "green",
     textAlign: "center",
     color: "pink",
-    border: "solid goldenrod 5px",
-    textAlign: "center"
+    border: "solid goldenrod 5px"
   },
   keeganPic: {
     height: 500,

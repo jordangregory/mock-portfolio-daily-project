@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const styles = {
   headerContainer: {
@@ -31,37 +31,100 @@ class BaseLayoutContainer extends Component {
       <div style={styles.headerContainer}>
         <header>
           <button style={styles.ButtonStyle}>
-            <Link style={styles.HeaderLinkStyle} to="/">
+            <NavLink
+              activeStyle={{ color: "goldenrod" }}
+              style={styles.HeaderLinkStyle}
+              exact
+              to="/"
+            >
               HOME
-            </Link>
+            </NavLink>
           </button>
           <button style={styles.ButtonStyle}>
-            <Link style={styles.HeaderLinkStyle} to="/about">
+            <NavLink
+              activeStyle={{ color: "goldenrod" }}
+              style={styles.HeaderLinkStyle}
+              exact
+              to="/about"
+            >
               ABOUT
-            </Link>
+            </NavLink>
           </button>
           <button style={styles.ButtonStyle}>
-            <Link style={styles.HeaderLinkStyle} to="/portfolio">
+            <NavLink
+              activeStyle={{ color: "goldenrod" }}
+              style={styles.HeaderLinkStyle}
+              to="/portfolio"
+            >
               PORTFOLIO
-            </Link>
+            </NavLink>
+          </button>
+          <button style={styles.ButtonStyle}>
+            <NavLink
+              activeStyle={{ color: "goldenrod" }}
+              style={styles.HeaderLinkStyle}
+              to="/contacts"
+            >
+              CONTACT
+            </NavLink>
+          </button>
+          <button style={styles.ButtonStyle}>
+            <NavLink
+              activeStyle={{ color: "goldenrod" }}
+              style={styles.HeaderLinkStyle}
+              to="/references"
+            >
+              REFERENCES
+            </NavLink>
           </button>
         </header>
         {this.props.children}
         <footer>
           <button style={styles.ButtonStyle}>
-            <Link style={styles.FooterLinkStyle} to="/">
+            <NavLink
+              activeStyle={{ color: "goldenrod" }}
+              style={styles.FooterLinkStyle}
+              exact
+              to="/"
+            >
               HOME
-            </Link>
+            </NavLink>
           </button>
           <button style={styles.ButtonStyle}>
-            <Link style={styles.FooterLinkStyle} to="/about">
+            <NavLink
+              activeStyle={{ color: "goldenrod" }}
+              style={styles.FooterLinkStyle}
+              to="/about"
+            >
               ABOUT
-            </Link>
+            </NavLink>
           </button>
           <button style={styles.ButtonStyle}>
-            <Link style={styles.FooterLinkStyle} to="/portfolio">
+            <NavLink
+              activeStyle={{ color: "goldenrod" }}
+              style={styles.FooterLinkStyle}
+              to="/portfolio"
+            >
               PORTFOLIO
-            </Link>
+            </NavLink>
+          </button>
+          <button style={styles.ButtonStyle}>
+            <NavLink
+              activeStyle={{ color: "goldenrod" }}
+              style={styles.FooterLinkStyle}
+              to="/contacts"
+            >
+              CONTACT
+            </NavLink>
+          </button>
+          <button style={styles.ButtonStyle}>
+            <NavLink
+              activeStyle={{ color: "goldenrod" }}
+              style={styles.FooterLinkStyle}
+              to="/references"
+            >
+              REFERENCES
+            </NavLink>
           </button>
         </footer>
       </div>

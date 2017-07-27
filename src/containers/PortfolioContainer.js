@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 const styles = {
   blutoImages: {
     height: 500,
